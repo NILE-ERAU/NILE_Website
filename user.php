@@ -14,7 +14,7 @@ $values = [1, ':name' => $username, ':passwd' => $hash];
 /* Execute the query. */
 try
 {
-  $res = $pdo->prepare($query);
+  $res = $link->prepare($query);
   $res->execute($values);
 }
 catch (PDOException $e)
