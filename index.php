@@ -96,11 +96,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <style>
         body{ font: 14px sans-serif; }
         .wrapper{ width: 360px; padding: 20px; }
+        .center {
+                margin: auto;
+                width: 60%;
+                border: 5px solid #FFFF00;
+                padding: 10px;
+                }
     </style>
 </head>
 <body>
     <div class="center">
-        <img src="images/NILE_logo_text.png" alt="NILE Triangle Logo" style="width:512px;height:512px;">
+        <img src="/images/NILE_logo_text.png" alt="NILE Triangle Logo" style="width:420px;height:420px;">
         <br/>
         <p>Please fill in your credentials to login.</p>
 
