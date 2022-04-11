@@ -8,7 +8,7 @@ $password = 'mache123';
 /* Secure password hash. */
 $hash = password_hash($password, PASSWORD_DEFAULT);
 /* Execute the query. */
-$sql = "INSERT INTO system_info (id username, password) VALUES (1, ?, ?)";
+$sql = "INSERT INTO system_info (username, password) VALUES (?, ?)";
 if($stmt = mysqli_prepare($link, $sql)){
   // Bind variables to the prepared statement as parameters
   mysqli_stmt_bind_param($stmt, "ss", $username, $hash);
