@@ -7,20 +7,19 @@ $username = 'NILE';
 $password = 'mache123';
 /* Secure password hash. */
 $hash = password_hash($password, PASSWORD_DEFAULT);
-/* Insert query template. */
-$query = 'INSERT INTO system_info (id, username, password) VALUES (1, :name, :passwd)';
-/* Values array for PDO. */
-$values = [1, ':name' => $username, ':passwd' => $hash];
 /* Execute the query. */
-try
-{
-  $res = $link->prepare($query);
-  $res->execute($values);
-}
-catch (PDOException $e)
-{
-  /* Query error. */
-  echo 'Query error.';
-  die();
-}
+$sql = "INSERT INTO system_info (id username, password) VALUES (1, ?, ?)";
+if($stmt = mysqli_prepare($link, $sql)){
+  // Bind variables to the prepared statement as parameters
+  mysqli_stmt_bind_param($stmt, "ss", $username, $hash);
+  if(mysqli_stmt_execute($stmt)){
+      // Redirect to login page
+  } else{
+      echo "Oops! Something went wrong. Please try again later.";
+  }
+
+  // Close statement
+  mysqli_stmt_close($stmt);
+  }
+
 ?>
