@@ -99,8 +99,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         .center {
                 margin: auto;
                 width: 60%;
-                border: 5px solid #FFFF00;
                 padding: 10px;
+                text-align: center;
                 }
     </style>
 </head>
