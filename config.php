@@ -14,26 +14,4 @@ if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 
-$username = 'NILE';
-/* Password. */
-$password = 'mache123';
-/* Secure password hash. */
-$hash = password_hash($password, PASSWORD_DEFAULT);
-/* Insert query template. */
-$query = 'INSERT INTO system_info (id, username, password) VALUES (1, :name, :passwd)';
-/* Values array for PDO. */
-$values = [':name' => $username, ':passwd' => $hash];
-/* Execute the query. */
-try
-{
-  $res = $pdo->prepare($query);
-  $res->execute($values);
-}
-catch (PDOException $e)
-{
-  /* Query error. */
-  echo 'Query error.';
-  die();
-}
-
 ?>
