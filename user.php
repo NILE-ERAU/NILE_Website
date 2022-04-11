@@ -10,7 +10,7 @@ $hash = password_hash($password, PASSWORD_DEFAULT);
 /* Insert query template. */
 $query = 'INSERT INTO system_info (id, username, password) VALUES (1, :name, :passwd)';
 /* Values array for PDO. */
-$values = [':name' => $username, ':passwd' => $hash];
+$values = [1, ':name' => $username, ':passwd' => $hash];
 /* Execute the query. */
 try
 {
