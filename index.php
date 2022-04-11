@@ -108,7 +108,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <div class="center">
         <img src="/images/NILE_logo_text.png" alt="NILE Triangle Logo" style="width:420px;height:420px;">
         <br/>
-        <p>Please fill in your credentials to login.</p>
+        <br/>
 
         <?php
         if(!empty($login_err)){
