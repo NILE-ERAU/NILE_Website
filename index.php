@@ -131,6 +131,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
         </form>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <p>A 2021-2022 senior design project by Embry-Riddle Robotics students.</p>
+        <a href="https://nile-erau.github.io/" title="Go to NILE-ERAU Github Website">Check out our website for more information</a>
     </div>
 </body>
 </html>
