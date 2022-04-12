@@ -21,7 +21,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </style>
 </head>
 <body>
-<img src="/images/NILE_logo_text.png" alt="NILE Triangle Logo">
+<img src="/images/NILE_corner.png" alt="NILE Triangle Logo" style="width:200px">
 <p>Logged in as <?php echo $_SESSION["role"]; ?></p>
 </body>
 </html>
