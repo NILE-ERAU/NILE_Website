@@ -4,7 +4,7 @@ include 'config.php';
 /* Username. */
 $username = 'guest';
 /* Password. */
-$password = '';
+$password = 'guest';
 /* Secure password hash. */
 $hash = password_hash($password, PASSWORD_DEFAULT);
 
