@@ -10,6 +10,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 
 ?>
+<script type="text/javascript">
+    alert('WELCOME!');
+</script>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,5 +42,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <p>Logged in as <?php echo $_SESSION["role"]; ?>   <a href="http://nilerobot.info/logout.php" title="Logout">Logout</a></p>
 </div>
 </div>
+
 </body>
 </html>
