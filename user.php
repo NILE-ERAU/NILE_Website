@@ -2,13 +2,13 @@
 /* Include the database connection script. */
 include 'config.php';
 /* Username. */
-$username = 'NILE';
+$username = 'guest';
 /* Password. */
-$password = 'mache123';
+$password = '';
 /* Secure password hash. */
 $hash = password_hash($password, PASSWORD_DEFAULT);
 
-$role = 'admin'
+$role = 'guest';
 /* Execute the query. */
 $sql = "INSERT INTO users (username, password, role) VALUES (?, ?, ?)";
 if($stmt = mysqli_prepare($link, $sql)){
