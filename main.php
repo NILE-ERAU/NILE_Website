@@ -10,9 +10,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 
 ?>
-<script type="text/javascript">
-    alert('WELCOME!');
-</script>
+
 
 <!DOCTYPE html>
 <html lang="en">
