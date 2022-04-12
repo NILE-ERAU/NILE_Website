@@ -19,7 +19,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <title>Welcome</title>
+    <title>NILE - Dashboard</title>
     <style>
         body{ font-family:Verdana; text-align: left; }
         .content {
