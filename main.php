@@ -7,6 +7,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: index.php");
     exit;
 }
+
+
 ?>
 
 <!DOCTYPE html>
@@ -20,5 +22,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 </head>
 <body>
     <h1>WELCOME TO THE MATRIX</h1>
+    <h3>Current role: <?php echo $_SESSION["role"]; ?></h3>
 </body>
 </html>
