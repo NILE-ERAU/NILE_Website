@@ -93,6 +93,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <title>Login</title>
     <style>
         body{ font: 14px sans-serif; }

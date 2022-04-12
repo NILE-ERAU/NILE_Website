@@ -15,9 +15,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <title>Welcome</title>
     <style>
-        body{ font-family: Roboto: 14px sans-serif; text-align: left; }
+        body{ font-family:Verdana; text-align: left; }
     </style>
 </head>
 <body>
