@@ -17,11 +17,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <meta charset="UTF-8">
     <title>Welcome</title>
     <style>
-        body{ font: 14px sans-serif; text-align: center; }
+        body{ font: 14px sans-serif; text-align: left; }
     </style>
 </head>
 <body>
-    <h1>WELCOME TO THE MATRIX</h1>
-    <h3>Current role: <?php echo $_SESSION["role"]; ?></h3>
+<img src="/images/NILE_logo_text.png" alt="NILE Triangle Logo">
+<p>Logged in as <?php echo $_SESSION["role"]; ?></p>
 </body>
 </html>
