@@ -1,6 +1,6 @@
 <?php
 include("config.php");
-$result = mysqli_fetch_all("select * FROM queued_commands ORDER BY timestamp ASC", $link);
+$result = mysqli_query($link, "select * FROM queued_commands ORDER BY timestamp ASC");
 
 echo "<table class= 'no_outline' >";
 echo "<tr>";
