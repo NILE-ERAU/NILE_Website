@@ -18,6 +18,6 @@ while($data = mysqli_fetch_row($result))
     $command_str = '';
     echo "<td align=center>$command_str</td>";
     echo "</tr>";
-}
+};
 echo "</table>";
 ?>
