@@ -1,6 +1,6 @@
 <?php
 include("config.php");
-$result=mysqli_query("SELECT * FROM queued_commands ORDER BY ",$link);
+$result=mysqli_query("SELECT * FROM queued_commands ORDER BY timestamp ASC",$link);
 
 echo "<table border= '1' >";
 echo "<tr>";
