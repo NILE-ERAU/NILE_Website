@@ -42,11 +42,11 @@ while($data = mysqli_fetch_row($result))
     echo "<tr>";
     echo "<td align=center>$data[0]</td>";
     echo "<td align=center>$data[1]</td>";
+    echo "<td align=center>$data[13]</td>";
     echo "<td align=center>$data[2]</td>";
-    echo "<td align=center>$data[3]</td>";
     $arg_str = '';
     echo "<td align=center>$arg_str</td>";
-    echo "<td align=center>$data[13]</td>";
+    echo "<td align=center>$data[12]</td>";
     echo "</tr>";
 };
 echo "</tbody>";
