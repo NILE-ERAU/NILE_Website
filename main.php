@@ -49,9 +49,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
          float: left;
         }
         .no_outline {
-          border: 1px solid white;
+          border: 3px solid white;
           border-collapse: collapse;
-          background-color: #96D4D4;
+          background-color: #f2f2f2;
+          width:100%;
         }
     </style>
 </head>
