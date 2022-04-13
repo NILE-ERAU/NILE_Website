@@ -30,7 +30,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         });
       });
 
-      var timer, delay = 5000;
+      var timer, delay = 1000;
 
       timer = setInterval(function(){
        $.ajax({    //create an ajax request to mainsql.php
