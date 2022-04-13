@@ -108,7 +108,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <img src="/images/NILE_corner.png" alt="NILE Triangle Logo" style="width:400px">
   </div>
   <div class="rightdiv">
-    <p>Logged in as <?php echo $_SESSION["role"]; ?>   <a href="http://nilerobot.info/logout.php" title="Logout">Logout</a></p>
+    <p style ="text-align: right;">Logged in as <?php echo $_SESSION["role"]; ?>   <a href="http://nilerobot.info/logout.php" title="Logout">Logout</a></p>
   </div>
 </div>
 
