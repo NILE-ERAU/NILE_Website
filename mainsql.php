@@ -2,12 +2,12 @@
 include("config.php");
 $result=mysqli_query("SELECT * FROM queued_commands ORDER BY ",$link);
 
-echo "<table border= '1' >
-<tr>
-<td align=center> <b>ID No</b></td>
-<td align=center><b>Time</b></td>
-<td align=center><b>Command</b></td>
-<td align=center><b>Argument</b></td></td>";
+echo "<table border= '1' >";
+echo "<tr>";
+echo "<td align=center> <b>ID No</b></td>";
+echo "<td align=center><b>Time</b></td>";
+echo "<td align=center><b>Command</b></td>";
+echo "<td align=center><b>Argument</b></td></td>";
 
 while($data = mysqli_fetch_row($result))
 {
