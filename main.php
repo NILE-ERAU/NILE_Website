@@ -20,8 +20,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
       $(document).ready(function() {
 
+        var timer, delay = 5000;
 
-         $.ajax({    //create an ajax request to config.php
+        timer = setInterval(function(){
+         $.ajax({    //create an ajax request to mainsql.php
            type: "GET",
            url: "mainsql.php",
            dataType: "html",   //expect html to be returned
@@ -33,6 +35,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
       });
       });
+      }, delay);
+
       </script>
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
