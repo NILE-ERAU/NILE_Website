@@ -18,6 +18,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script type="text/javascript">
 
+        import java.io*;
       $(document).ready(function() {
         $.ajax({    //create an ajax request to mainsql.php
           type: "GET",
@@ -30,9 +31,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         });
       });
 
-      String role = "<?php echo $_SESSION["role"]?>";
+      var role = "<?php echo $_SESSION["role"]?>";
       var timer, delay = 10000;
-      if (role.equals("admin")) {
+      if (role.matches("admin")) {
         delay = 1000;
       }
 
