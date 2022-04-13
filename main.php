@@ -30,7 +30,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         });
       });
 
-      String role = "<?php echo $_SESSION[\"role\"]?>";
+      String role = "<?php echo $_SESSION['role']?>";
       var timer, delay = 10000;
       if (role.matches("admin")) {
         var timer, delay = 1000;
