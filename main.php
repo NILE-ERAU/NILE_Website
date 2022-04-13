@@ -48,6 +48,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         .leftdiv {
          float: left;
         }
+        .no_outline {
+          border: 1px solid white;
+          border-collapse: collapse;
+          background-color: #96D4D4;
+        }
     </style>
 </head>
 <body>

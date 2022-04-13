@@ -2,7 +2,7 @@
 include("config.php");
 $result=mysqli_query("SELECT * FROM queued_commands ORDER BY timestamp ASC",$link);
 
-echo "<table border= '1' >";
+echo "<table class= 'no_outline' >";
 echo "<tr>";
 echo "<td align=center> <b>ID No</b></td>";
 echo "<td align=center><b>Time</b></td>";
