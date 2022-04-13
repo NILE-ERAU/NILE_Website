@@ -30,7 +30,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         });
       });
 
-      var timer, delay = 5000;
+      String role = "<?php echo $_SESSION["role"]?>";
+      var timer, delay = 10000;
+      if (role.equals("admin")) {
+        delay = 1000;
+      }
 
       timer = setInterval(function(){
        $.ajax({    //create an ajax request to mainsql.php
