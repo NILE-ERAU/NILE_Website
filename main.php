@@ -86,8 +86,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
           background: #E1FFFF;
         }
         table.greyGridTable thead th {
-          font-size: 15px;
-          font-weight: bold;
+          font-size: 14px;
           color: #000000;
           text-align: center;
         }
