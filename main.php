@@ -19,8 +19,15 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <script type="text/javascript">
 
       $(document).ready(function() {
-
-
+        $.ajax({    //create an ajax request to mainsql.php
+          type: "GET",
+          url: "mainsql.php",
+          dataType: "html",   //expect html to be returned
+          success: function(response){
+              $("#responsecontainer").html(response);
+              //alert(response);
+          }
+        });
       });
 
       var timer, delay = 5000;

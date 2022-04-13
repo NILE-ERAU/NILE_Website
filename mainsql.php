@@ -1,8 +1,8 @@
 <?php
 include("config.php");
-$result = mysqli_query("select * FROM queued_commands ORDER BY timestamp ASC", $link);
+$result = mysqli_fetch_all("select * FROM queued_commands ORDER BY timestamp ASC", $link);
 
-echo "<table class= ''no_outline'' >";
+echo "<table class= 'no_outline' >";
 echo "<tr>";
 echo "<td align=center><p>ID</p></td>";
 echo "<td align=center><p>Time</p></td>";
