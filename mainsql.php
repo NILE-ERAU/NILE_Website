@@ -2,7 +2,7 @@
 include("config.php");
 $result = mysqli_query($link, "select * FROM queued_commands ORDER BY timestamp ASC");
 
-echo "<table class= ""greyGridTable"" >";
+echo "<table class= 'greyGridTable' >";
 echo "<thead>";
 echo "<tr>";
 echo "<td align=center><p>ID</p></td>";
