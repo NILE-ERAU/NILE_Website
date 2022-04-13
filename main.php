@@ -15,11 +15,28 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript">
+
+      $(document).ready(function() {
+
+
+         $.ajax({    //create an ajax request to config.php
+           type: "GET",
+           url: "mainsql.php",
+           dataType: "html",   //expect html to be returned
+           success: function(response){
+               $("#responsecontainer").html(response);
+               //alert(response);
+           }
+
+
+      });
+      });
+      </script>
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <title>NILE - Dashboard</title>
+    <title>NILE Dashboard</title>
     <style>
         body{ font-family:Verdana; text-align: left; }
         .content {
@@ -34,13 +51,23 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </style>
 </head>
 <body>
-  <div class="content">
-<div class="leftdiv">
-  <img src="/images/NILE_corner.png" alt="NILE Triangle Logo" style="width:400px">
+<div class="content">
+  <div class="leftdiv">
+    <img src="/images/NILE_corner.png" alt="NILE Triangle Logo" style="width:400px">
+  </div>
+  <div class="rightdiv">
+    <p>Logged in as <?php echo $_SESSION["role"]; ?>   <a href="http://nilerobot.info/logout.php" title="Logout">Logout</a></p>
+  </div>
 </div>
-<div class="rightdiv">
-  <p>Logged in as <?php echo $_SESSION["role"]; ?>   <a href="http://nilerobot.info/logout.php" title="Logout">Logout</a></p>
-</div>
+
+<div class="content">
+  <div class="leftdiv">
+    <div id="responsecontainer" align="center">
+    <div>
+  </div>
+  <div class="rightdiv">
+
+  </div>
 </div>
 
 </body>
