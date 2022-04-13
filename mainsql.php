@@ -3,12 +3,13 @@ include("config.php");
 $result = mysqli_query($link, "select * FROM queued_commands ORDER BY timestamp ASC");
 
 echo "<table class= ""greyGridTable"" >";
+echo "<thead>";
 echo "<tr>";
 echo "<td align=center><p>ID</p></td>";
 echo "<td align=center><p>Time</p></td>";
 echo "<td align=center><p>Command</p></td>";
-echo "<td align=center><p>Argument</p></td></td>";
-
+echo "<td align=center><p>Argument</p></td></tr></thead>";
+echo "<tbody>";
 while($data = mysqli_fetch_row($result))
 {
     echo "<tr>";
@@ -19,5 +20,6 @@ while($data = mysqli_fetch_row($result))
     echo "<td align=center>$command_str</td>";
     echo "</tr>";
 };
+echo "</tbody>";
 echo "</table>";
 ?>
