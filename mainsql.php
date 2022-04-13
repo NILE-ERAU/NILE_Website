@@ -1,13 +1,13 @@
 <?php
 include("config.php");
-$result=mysqli_query("SELECT * FROM queued_commands ORDER BY timestamp ASC",$link);
+$result = mysqli_query("select * FROM queued_commands ORDER BY timestamp ASC", $link);
 
 echo "<table class= 'no_outline' >";
 echo "<tr>";
-echo "<td align=center> <b>ID No</b></td>";
-echo "<td align=center><b>Time</b></td>";
-echo "<td align=center><b>Command</b></td>";
-echo "<td align=center><b>Argument</b></td></td>";
+echo "<td align=center><p>ID No</p></td>";
+echo "<td align=center><p>Time</p></td>";
+echo "<td align=center><p>Command</p></td>";
+echo "<td align=center><p>Argument</p></td></td>";
 
 while($data = mysqli_fetch_row($result))
 {
