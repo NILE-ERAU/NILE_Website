@@ -113,12 +113,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <div class="content">
   <div class="leftdiv">
-    <div id="responsecontainer" align="center">
-    <div>
+
   </div>
   <div class="rightdiv">
 
   </div>
+  <div id="responsecontainer" align="center"></div>
 </div>
 
 </body>
