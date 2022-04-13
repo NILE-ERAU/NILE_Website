@@ -66,36 +66,28 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
           width:100%;
         }
         table.greyGridTable {
-          border: 2px solid #FFFFFF;
+          border: 1px solid #FFFFFF;
+          background-color: #EEEEEE;
           width: 100%;
           text-align: center;
           border-collapse: collapse;
         }
         table.greyGridTable td, table.greyGridTable th {
-          border: 1px solid #FFFFFF;
+          border: 3px solid #FFFFFF;
           padding: 3px 4px;
         }
         table.greyGridTable tbody td {
           font-size: 13px;
         }
-        table.greyGridTable td:nth-child(even) {
-          background: #EBEBEB;
-        }
         table.greyGridTable thead {
-          background: #FFFFFF;
-          border-bottom: 4px solid #333333;
+          background: #E1FFFF;
         }
         table.greyGridTable thead th {
           font-size: 15px;
           font-weight: bold;
-          color: #333333;
+          color: #000000;
           text-align: center;
-          border-left: 2px solid #333333;
         }
-        table.greyGridTable thead th:first-child {
-          border-left: none;
-        }
-
         table.greyGridTable tfoot {
           font-size: 14px;
           font-weight: bold;
