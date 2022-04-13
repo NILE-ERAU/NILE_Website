@@ -20,20 +20,20 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
       $(document).ready(function() {
 
-        var timer, delay = 5000;
-
-        timer = setInterval(function(){
-         $.ajax({    //create an ajax request to mainsql.php
-           type: "GET",
-           url: "mainsql.php",
-           dataType: "html",   //expect html to be returned
-           success: function(response){
-               $("#responsecontainer").html(response);
-               //alert(response);
-           }
-
 
       });
+
+      var timer, delay = 5000;
+
+      timer = setInterval(function(){
+       $.ajax({    //create an ajax request to mainsql.php
+         type: "GET",
+         url: "mainsql.php",
+         dataType: "html",   //expect html to be returned
+         success: function(response){
+             $("#responsecontainer").html(response);
+             //alert(response);
+         }
       });
       }, delay);
 
