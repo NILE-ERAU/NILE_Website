@@ -2,8 +2,8 @@
 
 
 echo "<h2>Schedule Command</h2>";
-echo "<form action='add_entry.php' method='post'>";
 echo "<table class= 'greyGridTable' >";
+echo "<form action='add_entry.php' method='post'>";
 echo "<thead>";
 echo "<tr>";
 echo "<td>Time</td>";
@@ -24,9 +24,9 @@ echo "<td><input type='number' id='z' name='z' value=0></td>";
 echo "<td><input type='number' id='d0' name='d0' value=0></td>";
 echo "<td><input type='number' id='d1' name='d1' value=0></td>";
 echo "<td><input type='number' id='i0' name='i0' value=0></td>";
-echo "<td align=center><input type='submit' value='+'></td>";
+echo "<td><input type='submit' value='+'></td>";
 echo "</tr></tbody>";
-echo "</table></form>";
+echo "</form></table>";
 
 
 ?>
