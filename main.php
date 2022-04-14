@@ -34,14 +34,14 @@ $role = $_SESSION['role'];
       });
 
       var role = "admin";
-      if (true) {
+      if (role.includes("admin")) {
         $.ajax({    //create an ajax request to mainsql.php
           type: "GET",
           url: "command_publish.php",
           dataType: "html",   //expect html to be returned
           success: function(response){
               $("#command_publish").html(response);
-              alert(response);
+              //alert(response);
           }
        });
       }
