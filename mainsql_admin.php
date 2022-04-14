@@ -16,8 +16,8 @@ echo "<tbody>";
 while($data = mysqli_fetch_row($result))
 {
     $data_id = $data[0];
-    echo "<tr>";
     echo "<form action='remove_entry.php' method='post'>"
+    echo "<tr>";
     echo "<input type='hidden' name='deleteid' value='" . $data_id . "'>";
     echo "<td align=center>$data[0]</td>";
     echo "<td align=center>$data[1]</td>";
@@ -27,7 +27,7 @@ while($data = mysqli_fetch_row($result))
                  . strval(round($data[7],1)) . ', ' . strval(round($data[8]));
     echo "<td align=center>$command_str</td>";
     echo "<td align=center><input type='submit' value='X'></td>";
-    echo "</form></tr>";
+    echo "</tr></form>";
 };
 echo "</tbody>";
 echo "</table>";
