@@ -17,7 +17,7 @@ while($data = mysqli_fetch_row($result))
 {
   echo "<tr>";
     $data_id = $data[0];
-    echo "<input type='hidden' name='delete_id' value='" . $data_id . "'>";
+    echo "<input type='hidden' name='deleteid' value='" . $data_id . "'>";
     echo "<tr>";
     echo "<td align=center>$data[0]</td>";
     echo "<td align=center>$data[1]</td>";
