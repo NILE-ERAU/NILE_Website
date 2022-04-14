@@ -7,10 +7,10 @@ echo "<form action='remove_entry.php'><tr>";
 echo "<table class= 'greyGridTable' >";
 echo "<thead>";
 echo "<tr>";
-echo "<td>Time</td>";
-echo "<td>Command</td>";
-echo "<td>Command</td>";
-echo "<td>Argument</td>";
+echo "<td>ID</td>";
+echo "<td>Queued For</td>";
+echo "<td>Command</td>";;
+echo "<td>Argument</td>";;
 echo "<td>Remove</td></tr></thead>";
 echo "<tbody>";
 while($data = mysqli_fetch_row($result))
