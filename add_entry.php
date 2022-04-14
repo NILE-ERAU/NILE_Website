@@ -1,7 +1,7 @@
 <?php
 include("config.php");
 $timestamp = trim($_POST["timestamp"]);
-$timestamp_sql = str_replace("T"," ",$timestamp)  . ":00.000000";
+$timestamp_sql = str_replace("T"," ",$timestamp)  . ".000000";
 $command = trim($_POST["command"]);
 $theta = trim($_POST["theta"]);
 $r = trim($_POST["r"]);
