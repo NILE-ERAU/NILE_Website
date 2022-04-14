@@ -16,7 +16,7 @@ if(strcmp($_SESSION['role'],'admin')) {
   echo "<td>D1</td>";
   echo "<td>I0</td></tr></thead>";
   echo "<tbody>";
-  echo "<form action='add_entry.php'>"
+  echo "<form action='add_entry.php'>";
   echo "<td><input type='datetime-local' id='timestamp' name='timestamp'></td>";
   echo "<td><input type='text' id='command' name='command'></td>";
   echo "<td><input type='number' id='theta' name='theta'></td>";
