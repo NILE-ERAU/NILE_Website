@@ -28,21 +28,24 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
               //alert(response);
           }
         });
+        if (role.matches("admin")) {
+          var timer, delay = 1000;
+          $.ajax({    //create an ajax request to mainsql.php
+            type: "GET",
+            url: "command_publish.php",
+            dataType: "html",   //expect html to be returned
+            success: function(response){
+                $("#commandpub").html(response);
+                //alert(response);
+            }
+         });
+        }
       });
 
       String role = "<?php echo $_SESSION['role'];?>";
       //var timer, delay = 10000;
       if (role.matches("admin")) {
         var timer, delay = 1000;
-        $.ajax({    //create an ajax request to mainsql.php
-          type: "GET",
-          url: "command_publish.php",
-          dataType: "html",   //expect html to be returned
-          success: function(response){
-              $("#commandpub").html(response);
-              //alert(response);
-          }
-       });
       }
       else {
         var timer, delay = 10000;
