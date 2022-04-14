@@ -17,7 +17,7 @@ $role = $_SESSION['role'];
 <html lang="en">
 <head>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script type="text/javascript">
+      <script type="text/javascript">
 
 
       $(document).ready(function() {
@@ -33,6 +33,7 @@ $role = $_SESSION['role'];
 
       });
 
+      var role = "<?php echo $role; ?>";
       if (role.matches("admin") ==  true) {
         .ajax({    //create an ajax request to mainsql.php
           type: "GET",
