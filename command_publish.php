@@ -22,7 +22,7 @@ echo "<td><input type='number' id='r' name='r'></td>";
 echo "<td><input type='number' id='z' name='z'></td>";
 echo "<td><input type='number' id='d0' name='d0'></td>";
 echo "<td><input type='number' id='d1' name='d1'></td>";
-echo "<td><input type='number' id='i0' name='i0'></td></tr></body>";
+echo "<td><input type='number' id='i0' name='i0'></td></tr>";
 echo "</form>";
 echo "</tbody>";
 echo "</table>";
