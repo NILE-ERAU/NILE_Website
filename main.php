@@ -33,7 +33,7 @@ $role = $_SESSION['role'];
 
       });
 
-      var timer delay = 10000;
+      var timer, delay = 10000;
       var role = "<?php echo $role; ?>";
       if (role.includes("admin")) {
         delay = 1000;
