@@ -2,7 +2,7 @@
 include("config.php");
 
 $result = mysqli_query($link, "select * FROM queued_commands ORDER BY timestamp ASC");
-echo "<h2>Queued Commands</h2><form action='remove_entry.php' method='post'>";
+echo "<h2>Queued Commands</h2>";
 
 echo "<table class= 'greyGridTable' >";
 echo "<thead>";
@@ -17,6 +17,7 @@ while($data = mysqli_fetch_row($result))
 {
   echo "<tr>";
     $data_id = $data[0];
+    echo "<form action='remove_entry.php' method='post'">
     echo "<input type='hidden' name='deleteid' value='" . $data_id . "'>";
     echo "<tr>";
     echo "<td align=center>$data[0]</td>";
@@ -27,10 +28,10 @@ while($data = mysqli_fetch_row($result))
                  . strval(round($data[7],1)) . ', ' . strval(round($data[8]));
     echo "<td align=center>$command_str</td>";
     echo "<td align=center><input type='submit' value='X'></td>";
-    echo "</tr>";
+    echo "</tr></form>";
 };
 echo "</tbody>";
-echo "</table></form>";
+echo "</table>";
 
 
 $result = mysqli_query($link, "select * FROM completed_commands ORDER BY timestamp ASC");
