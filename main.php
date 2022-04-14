@@ -21,6 +21,18 @@ $role = $_SESSION['role'];
 
 
       $(document).ready(function() {
+        if (role.includes("admin")) {
+         $.ajax({    //create an ajax request to mainsql.php
+           type: "GET",
+           url: "mainsql_admin.php",
+           dataType: "html",   //expect html to be returned
+           success: function(response){
+               $("#responsecontainer").html(response);
+               //alert(response);
+           }
+        });
+      }
+      else {
         $.ajax({    //create an ajax request to mainsql.php
           type: "GET",
           url: "mainsql.php",
@@ -30,6 +42,7 @@ $role = $_SESSION['role'];
               //alert(response);
           }
        });
+      }
 
       });
 
