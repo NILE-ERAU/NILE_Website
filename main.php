@@ -30,7 +30,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
        });
       });
 
-      //var role = "<?php echo $_SESSION['role'];?>";
+    
       var timer, delay = 10000;
       //var timer, delay = 10000;
 
