@@ -29,20 +29,20 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
               //alert(response);
           }
        });
-       if (role.matches("admin") ==  true) {
-           $.ajax({    //create an ajax request to mainsql.php
-             type: "GET",
-             url: "command_publish.php",
-             dataType: "html",   //expect html to be returned
-             success: function(response){
-                 $("#command_publish").html(response);
-                 //alert(response);
-             }
-          });
-         }
+
       });
 
-
+      if (role.matches("admin") ==  true) {
+        .ajax({    //create an ajax request to mainsql.php
+          type: "GET",
+          url: "command_publish.php",
+          dataType: "html",   //expect html to be returned
+          success: function(response){
+              $("#command_publish").html(response);
+              //alert(response);
+          }
+       });
+      }
       var timer, delay = 10000;
       //var timer, delay = 10000;
 
