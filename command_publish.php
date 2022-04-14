@@ -13,7 +13,7 @@ echo "<td>Z</td>";
 echo "<td>D0</td>";
 echo "<td>D1</td>";
 echo "<td>I0</td></tr></thead>";
-echo "<tbody>";
+echo "<tbody><tr>";
 echo "<form action='add_entry.php'>";
 echo "<td><input type='datetime-local' id='timestamp' name='timestamp'></td>";
 echo "<td><input type='text' id='command' name='command'></td>";
