@@ -2,7 +2,7 @@
 
 
 echo "<h2>Schedule Command</h2>";
-echo "<form action='add_entry.php' method='post'>";
+echo "<form action='add_entry.php' method='post' width='100%'>";
 echo "<table class= 'greyGridTable' >";
 echo "<thead>";
 echo "<tr>";
