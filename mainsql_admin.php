@@ -3,7 +3,7 @@ include("config.php");
 
 $result = mysqli_query($link, "select * FROM queued_commands ORDER BY timestamp ASC");
 echo "<h2>Queued Commands</h2>";
-echo "<form action='remove_entry.php'><tr>";
+echo "<form action='remove_entry.php' method='post'><tr>";
 echo "<table class= 'greyGridTable' >";
 echo "<thead>";
 echo "<tr>";
@@ -15,6 +15,7 @@ echo "<td>Remove</td></tr></thead>";
 echo "<tbody>";
 while($data = mysqli_fetch_row($result))
 {
+    $data_id = $data[0];
     echo "<tr>";
     echo "<td align=center>$data[0]</td>";
     echo "<td align=center>$data[1]</td>";
