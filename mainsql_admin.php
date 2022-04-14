@@ -24,7 +24,7 @@ while($data = mysqli_fetch_row($result))
                  . strval(round($data[5],3)) . " - ARG = " . strval(round($data[6],1)) . ', '
                  . strval(round($data[7],1)) . ', ' . strval(round($data[8]));
     echo "<td align=center>$command_str</td>";
-    echo "<td align=center><input type='submit' value='X'></td>";
+    echo "<td align=center><input type='submit' value='X' name='delete_id[" . strval($data_id) . "]'></td>";
     echo "</tr>";
 };
 echo "</tbody>";

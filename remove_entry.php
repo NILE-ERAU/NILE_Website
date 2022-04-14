@@ -1,7 +1,13 @@
 <?php
 include("config.php");
-$result = mysqli_query($link, "select * FROM queued_commands ORDER BY timestamp ASC");
+$sql = "delete FROM queued_commands WHERE id=" . strval($_POST['delete_id']) . ");";
+if ($link->query($sql) === TRUE) {
+ echo "New record created successfully";
+} else {
+ echo "Error: " . $sql . "<br>" . $link->error;
+}
 
+$link->close();
 
 header("location: main.php");
 exit;
