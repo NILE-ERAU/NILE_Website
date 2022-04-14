@@ -39,7 +39,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         var timer, delay = 10000;
       }
 
-      var timer, delay = 10000;
       timer = setInterval(function(){
         if (role.matches("admin")) {
           $.ajax({    //create an ajax request to mainsql.php
