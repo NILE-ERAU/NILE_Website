@@ -12,7 +12,7 @@ $i0 = trim($_POST["i0"]);
 $sql =  "insert INTO queued_commands
          (timestamp, command, pos_theta_q, pos_r_q, pos_z_q, argument_d0, argument_d1, argument_i0)
          VALUES
-        (" . $timestamp_sql . "," . $command . "," . $theta . "," . $r . ","
+        (" . "'" . $timestamp_sql . "','" . $command . "'," . $theta . "," . $r . ","
            . $z . "," . $d0 . "," . $d1 . "," . $i0 . ");";
 
 if ($link->query($sql) === TRUE) {
