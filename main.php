@@ -33,7 +33,7 @@ $role = $_SESSION['role'];
 
       });
 
-      var role = "admin";
+      var role = "<?php echo $role; ?>";
       if (role.includes("admin")) {
         $.ajax({    //create an ajax request to mainsql.php
           type: "GET",
