@@ -15,7 +15,6 @@ echo "<td>Remove</td></tr></thead>";
 echo "<tbody>";
 while($data = mysqli_fetch_row($result))
 {
-  echo "<tr>";
     $data_id = $data[0];
     echo "<form action='remove_entry.php' method='post'">
     echo "<input type='hidden' name='deleteid' value='" . $data_id . "'>";
