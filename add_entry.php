@@ -10,15 +10,6 @@ $d0 = trim($_POST["d0"]);
 $d1 = trim($_POST["d1"]);
 $i0 = trim($_POST["i0"]);
 
-$timestamp = trim($_POST["timestamp"]);
-$timestamp_sql = str_replace("T"," ",$timestamp)  . ".000000";
-$command = trim($_POST["command"]);
-$theta = "0";
-$r = "0";
-$z = "0";
-$d0 = "0";
-$d1 = "0";
-$i0 = "0";
 
 
 $sql =  "insert INTO queued_commands
