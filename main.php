@@ -34,6 +34,18 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       var timer, delay = 10000;
       //var timer, delay = 10000;
 
+      if (role.matches("admin")) {
+          var timer, delay = 1000;
+          $.ajax({    //create an ajax request to mainsql.php
+            type: "GET",
+            url: "command_publish.php",
+            dataType: "html",   //expect html to be returned
+            success: function(response){
+                $("#commandpub").html(response);
+                //alert(response);
+            }
+         });
+        }
 
 
 
@@ -124,6 +136,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <div class="rightdiv">
 
   </div>
+  <div id="commandpub" align="center"></div>
   <div id="responsecontainer" align="center"></div>
 </div>
 
