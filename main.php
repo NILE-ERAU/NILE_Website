@@ -33,8 +33,10 @@ $role = $_SESSION['role'];
 
       });
 
+      var timer delay = 10000;
       var role = "<?php echo $role; ?>";
       if (role.includes("admin")) {
+        delay = 1000;
         $.ajax({    //create an ajax request to mainsql.php
           type: "GET",
           url: "command_publish.php",
@@ -45,7 +47,7 @@ $role = $_SESSION['role'];
           }
        });
       }
-      var timer, delay = 10000;
+
       //var timer, delay = 10000;
 
 
@@ -53,28 +55,28 @@ $role = $_SESSION['role'];
 
 
       timer = setInterval(function(){
-      if (role.includes("admin")) {
-       $.ajax({    //create an ajax request to mainsql.php
-         type: "GET",
-         url: "mainsql_admin.php",
-         dataType: "html",   //expect html to be returned
-         success: function(response){
-             $("#responsecontainer").html(response);
-             //alert(response);
-         }
-      });
-    }
-    else {
-      $.ajax({    //create an ajax request to mainsql.php
-        type: "GET",
-        url: "mainsql.php",
-        dataType: "html",   //expect html to be returned
-        success: function(response){
-            $("#responsecontainer").html(response);
-            //alert(response);
-        }
-     });
-    }
+        if (role.includes("admin")) {
+         $.ajax({    //create an ajax request to mainsql.php
+           type: "GET",
+           url: "mainsql_admin.php",
+           dataType: "html",   //expect html to be returned
+           success: function(response){
+               $("#responsecontainer").html(response);
+               //alert(response);
+           }
+        });
+      }
+      else {
+        $.ajax({    //create an ajax request to mainsql.php
+          type: "GET",
+          url: "mainsql.php",
+          dataType: "html",   //expect html to be returned
+          success: function(response){
+              $("#responsecontainer").html(response);
+              //alert(response);
+          }
+       });
+      }
 
       }, delay);
 

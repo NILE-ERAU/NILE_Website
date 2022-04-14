@@ -21,7 +21,7 @@ while($data = mysqli_fetch_row($result))
     echo "<td align=center>$data[2]</td>";
     $command_str = '';
     echo "<td align=center>$command_str</td>";
-    echo "<td align=center><input type="submit" value="X"></td>";
+    echo "<td align=center><input type='submit' value='X'></td>";
     echo "</tr>";
 };
 echo "</tbody>";
