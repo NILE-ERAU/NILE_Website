@@ -2,7 +2,7 @@
 include("config.php");
 $result = mysqli_query($link, "select * FROM queued_commands ORDER BY timestamp ASC");
 
-if(strcmp($_SESSION['role'],'admin')) {
+if(strcmp($_SESSION['role'],"admin") == true) {
   echo "<h2>Schedule Command</h2>";
   echo "<table class= 'greyGridTable' >";
   echo "<thead>";
