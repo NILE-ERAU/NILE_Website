@@ -34,7 +34,7 @@ $role = $_SESSION['role'];
       });
 
       var role = "admin";
-      if (role.matches("admin") == true) {
+      if (true) {
         $.ajax({    //create an ajax request to mainsql.php
           type: "GET",
           url: "command_publish.php",
