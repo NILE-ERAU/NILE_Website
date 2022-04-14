@@ -28,7 +28,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
               //alert(response);
           }
         });
-        
+
       });
 
       String role = "<?php echo $_SESSION['role'];?>";
@@ -128,7 +128,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <div class="rightdiv">
 
   </div>
-  <div id="commandpub" align="center"></div>
   <div id="responsecontainer" align="center"></div>
 </div>
 
