@@ -100,7 +100,6 @@ $role = $_SESSION['role'];
     <style>
         body{ font-family:Verdana; text-align: left; }
         .content {
-          overflow: auto;
           width: 100%;
         }
         .rightdiv {
