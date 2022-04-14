@@ -1,6 +1,6 @@
 <?php
 include("config.php");
-$sql = "delete FROM queued_commands WHERE id=" . strval($_POST['delete_id']) . ");";
+$sql = "delete FROM queued_commands WHERE id=" . $_POST['delete_id'] . ";";
 if ($link->query($sql) === TRUE) {
  echo "New record created successfully";
 } else {
