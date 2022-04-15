@@ -8,29 +8,30 @@ echo "<table class= 'greyGridTable' >";
 echo "<thead>";
 echo "<tr>";
 echo "<td>ID</td>";
-echo "<td>Queued For</td>";
-echo "<td>Command</td>";;
-echo "<td>Argument</td>";;
-echo "<td>Remove</td></tr></thead>";
+echo "<td>Completed At</td>";
+echo "<td>Queued At</td>";
+echo "<td>Command</td>";
+echo "<td>Completed Argument</td>";
+echo "<td>Queued Arg</td>";
+echo "<td>Status</td></tr></thead>";
 echo "<tbody>";
 while($data = mysqli_fetch_row($result))
 {
-    $data_id = $data[0];
-
     echo "<tr>";
-
     echo "<td align=center>$data[0]</td>";
     echo "<td align=center>$data[1]</td>";
+    echo "<td align=center>$data[13]</td>";
     echo "<td align=center>$data[2]</td>";
     $command_str = "θRZ = " . strval(round($data[3],3)) . '°, ' . strval(round($data[4],3)) . ' m, '
                  . strval(round($data[5],3)) . " m";
-    $command_str2 = "ARG = " . strval(round($data[6],1)) . ', '
-    . strval(round($data[7],1)) . ', ' . strval(round($data[8]));
+    echo "<td align=center>$command_str</td>";
+
+    $command_str = "θRZ = " . strval(round($data[6],3)) . '°, ' . strval(round($data[7],3)) . ' m, '
+                 . strval(round($data[8],3)) . " m";
+    $command_str2 = "ARG = " . strval(round($data[9],1)) . ', '
+    . strval(round($data[10],1)) . ', ' . strval(round($data[11]));
     echo "<td align=center>$command_str<br/>$command_str2</td>";
-    echo "<td align=center>";
-    echo "<form action='remove_entry.php' method='post'>";
-    echo "<input type='hidden' name='deleteid' value='" . $data_id . "'>";
-    echo "<input type='submit' value='X'></form></td>";
+    echo "<td align=center>$data[12]</td>";
     echo "</tr>";
 };
 echo "</tbody>";
