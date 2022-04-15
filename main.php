@@ -161,6 +161,7 @@ $role = $_SESSION['role'];
     </style>
 </head>
 <body>
+  <div>
   <div class="content">
   <div class="leftdiv">
     <img src="/images/NILE_corner.png" alt="NILE Triangle Logo" style="width:400px">
@@ -178,5 +179,6 @@ $role = $_SESSION['role'];
   <div id="responsecontainer" align="center"></div>
 </div>
 
+</div>
 </body>
 </html>
