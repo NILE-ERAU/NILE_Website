@@ -150,6 +150,9 @@ $role = $_SESSION['role'];
         table.greyGridTable tfoot td {
           font-size: 14px;
         }
+        .numinput {
+          width: 50px;
+        }
     </style>
 </head>
 <body>
