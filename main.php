@@ -141,6 +141,7 @@ $role = $_SESSION['role'];
           font-size: 14px;
           color: #000000;
           text-align: center;
+          width: auto
         }
         table.greyGridTable tfoot {
           font-size: 14px;
