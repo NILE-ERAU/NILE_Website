@@ -17,7 +17,7 @@ echo "<td>$result[2]</td>";
 echo "<td>$result[3]</td>";
 echo "<td>$result[4]</td>";
 echo "</tr></tbody>";
-echo "</table>;
+echo "</table>"
 
 
 
