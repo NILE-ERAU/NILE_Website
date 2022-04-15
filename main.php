@@ -172,6 +172,11 @@ $role = $_SESSION['role'];
              text-align: center;
              float: right;
           }
+          section::after {
+            content: "";
+            display: table;
+            clear: both;
+          }
     </style>
 </head>
 <body>
