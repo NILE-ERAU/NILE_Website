@@ -105,10 +105,12 @@ $role = $_SESSION['role'];
         .rightdiv {
          float: right;
          width: 50%;
+         height: 500px;
         }
         .leftdiv {
          float: left;
          width: 50%;
+         height: 500px;
         }
         .no_outline {
           border: 3px solid white;
@@ -164,18 +166,10 @@ $role = $_SESSION['role'];
   </div>
   <div class="rightdiv">
     <p style ="text-align: right;">Logged in as <?php echo $_SESSION["role"]; ?>   <a href="http://nilerobot.info/logout.php" title="Logout">Logout</a></p>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
   </div>
   </div>
 
 <div class="content">
-  <br/>
   <div id="command_publish" align="center"></div>
   <div id="responsecontainer" align="center"></div>
 </div>
