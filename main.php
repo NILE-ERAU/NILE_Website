@@ -188,7 +188,7 @@ $role = $_SESSION['role'];
   </div>
 <div>
   <div class="leftcanv">
-    <canvas id="canvas"></canvas>
+    <canvas id="canvas" width="800" height="800"></canvas>
   </div>
   <div class="rightcanv">
 
