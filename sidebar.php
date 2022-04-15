@@ -15,8 +15,8 @@ echo "<tr>";
 echo "<td>$data[1]</td>";
 echo "<td>$data[0]</td>";
 echo "</tr></tbody>";
-echo "</table>"
-echo "<br/>"
+echo "</table>";
+echo "<br/>";
 
 $result = mysqli_query($link, "select * FROM robot_status ORDER BY id DESC LIMIT 1");
 $data = mysqli_fetch_row($result);
