@@ -225,7 +225,7 @@ $role = $_SESSION['role'];
 </section>
 <section>
   <div class="leftcanv">
-    <canvas id="canvas" width="600" height="600"></canvas>
+    <canvas id="canvas" width="600" height="600" align="center"></canvas>
   </div>
   <div class="rightcanv">
     <div id="sidebarcontainer" align="center"></div>
