@@ -100,16 +100,17 @@ $role = $_SESSION['role'];
     <style>
         body{ font-family:Verdana; text-align: left; }
         .content {
-          overflow: auto;
           width: 100%;
         }
         .rightdiv {
          float: right;
          width: 50%;
+         height: 100px;
         }
         .leftdiv {
          float: left;
          width: 50%;
+         height: 100px;
         }
         .no_outline {
           border: 3px solid white;
@@ -120,7 +121,9 @@ $role = $_SESSION['role'];
         table.greyGridTable {
           border: 1px solid #FFFFFF;
           background-color: #EEEEEE;
+          table-layout: fixed;
           width: 100%;
+          height: 100%;
           text-align: center;
           border-collapse: collapse;
         }
@@ -130,6 +133,8 @@ $role = $_SESSION['role'];
         }
         table.greyGridTable tbody td {
           font-size: 13px;
+          overflow: hidden;
+          width: auto
         }
         table.greyGridTable thead {
           background: #E1FFFF;
@@ -138,6 +143,7 @@ $role = $_SESSION['role'];
           font-size: 14px;
           color: #000000;
           text-align: center;
+          width: auto
         }
         table.greyGridTable tfoot {
           font-size: 14px;
@@ -148,17 +154,20 @@ $role = $_SESSION['role'];
         table.greyGridTable tfoot td {
           font-size: 14px;
         }
+        .numinput {
+          width: 50px;
+        }
     </style>
 </head>
 <body>
-<div class="content">
+  <div class="content">
   <div class="leftdiv">
     <img src="/images/NILE_corner.png" alt="NILE Triangle Logo" style="width:400px">
   </div>
   <div class="rightdiv">
     <p style ="text-align: right;">Logged in as <?php echo $_SESSION["role"]; ?>   <a href="http://nilerobot.info/logout.php" title="Logout">Logout</a></p>
   </div>
-</div>
+  </div>
 
 <div class="content">
   <div id="command_publish" align="center"></div>

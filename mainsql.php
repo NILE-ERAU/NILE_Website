@@ -18,9 +18,10 @@ while($data = mysqli_fetch_row($result))
     echo "<td align=center>$data[1]</td>";
     echo "<td align=center>$data[2]</td>";
     $command_str = "θRZ = " . strval(round($data[3],3)) . '°, ' . strval(round($data[4],3)) . ' m, '
-                 . strval(round($data[5],3)) . " m - ARG = " . strval(round($data[6],1)) . ', '
-                 . strval(round($data[7],1)) . ', ' . strval(round($data[8]));
-    echo "<td align=center>$command_str</td>";
+                 . strval(round($data[5],3)) . " m";
+    $command_str2 = "ARG = " . strval(round($data[6],1)) . ', '
+    . strval(round($data[7],1)) . ', ' . strval(round($data[8]));
+    echo "<td align=center>$command_str<br/>$command_str2</td>";
     echo "</tr>";
 };
 echo "</tbody>";
