@@ -3,7 +3,7 @@
 
 echo "<h2>Schedule Command</h2>";
 echo "<form action='add_entry.php' method='post' width=100%>";
-echo "<table class= 'greyGridTable' >";
+echo "<table class= 'greyGridTable' width=100%>";
 echo "<thead>";
 echo "<tr>";
 echo "<td>Time</td>";
