@@ -17,7 +17,7 @@ function drawShape(coords) {
 
 
     var x_ee = Math.cos(pos[0]*Math.PI/180.0)*pos[1]*(canvas.width / 2*0.72) +canvas.width / 2;
-    var y_ee = -Math.sin(pos[0]*Math.PI/180.0)*pos[1]*(canvas.height / 2*0.84) +canvas.height / 2;
+    var y_ee = -Math.sin(pos[0]*Math.PI/180.0)*pos[1]*(canvas.height / 2*0.86) +canvas.height / 2;
     // Draw shapes
     ctx.beginPath();
     ctx.arc(x_ee, y_ee, 6, 0, 2 * Math.PI, false);
