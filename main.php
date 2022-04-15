@@ -162,14 +162,12 @@ $role = $_SESSION['role'];
         }
         .leftcanv {
             width: 60%;
-            height:200px;
             margin: 0px auto;
             text-align: center;
             float: left;
          }
          .rightcanv {
              width: 40%;
-             height:200px;
              margin: 0px auto;
              text-align: center;
              float: right;
@@ -188,7 +186,7 @@ $role = $_SESSION['role'];
   </div>
 <div>
   <div class="leftcanv">
-    <canvas id="canvas" width="800" height="800"></canvas>
+    <canvas id="canvas" width="800" height="800" style="border:1px solid"></canvas>
   </div>
   <div class="rightcanv">
 
