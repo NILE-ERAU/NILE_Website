@@ -16,6 +16,7 @@ $role = $_SESSION['role'];
 <!DOCTYPE html>
 <html lang="en">
 <head>
+      <script str="draw_gz.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
       <script type="text/javascript">
 
@@ -168,6 +169,9 @@ $role = $_SESSION['role'];
     <p style ="text-align: right;">Logged in as <?php echo $_SESSION["role"]; ?>   <a href="http://nilerobot.info/logout.php" title="Logout">Logout</a></p>
   </div>
   </div>
+<div>
+<canvas id="canvas"></canvas>
+</div>
 
 <div class="content">
   <div id="command_publish" align="center"></div>

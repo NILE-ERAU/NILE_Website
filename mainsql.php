@@ -1,6 +1,8 @@
 <?php
 include("config.php");
 
+
+
 $result = mysqli_query($link, "select * FROM queued_commands ORDER BY timestamp ASC");
 echo "<h2>Queued Commands</h2>";
 echo "<table class= 'greyGridTable' >";
