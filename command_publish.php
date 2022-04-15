@@ -17,7 +17,7 @@ echo "<td>I0</td>";
 echo "<td>Add</td></tr></thead>";
 echo "<tbody>";
 echo "<td><input type='datetime-local' id='timestamp' name='timestamp'></td>";
-echo "<td><input type='text' id='command' name='command'></td>";
+echo "<td><input type='text' id='command' name='command' width=10%></td>";
 echo "<td><input type='number' id='theta' name='theta' value=0 step='any'></td>";
 echo "<td><input type='number' id='r' name='r' value=0 step='any'></td>";
 echo "<td><input type='number' id='z' name='z' value=0 step='any'></td>";
