@@ -6,10 +6,9 @@ function drawShape() {
 
     // use getContext to use the canvas for drawing
     var ctx = canvas.getContext('2d');
-
+    var img = document.getElementById("images/nile_field.png");
+    ctx.drawImage(img, 0, 0);
     // Draw shapes
-    ctx.fillRect(25,25,100,100);
-    ctx.clearRect(45,45,60,60);
-    ctx.strokeRect(50,50,50,50);
+
   }
 }
