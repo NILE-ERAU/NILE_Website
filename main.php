@@ -164,6 +164,13 @@ $role = $_SESSION['role'];
   </div>
   <div class="rightdiv">
     <p style ="text-align: right;">Logged in as <?php echo $_SESSION["role"]; ?>   <a href="http://nilerobot.info/logout.php" title="Logout">Logout</a></p>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
   </div>
   </div>
 
