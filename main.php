@@ -70,6 +70,7 @@ $role = $_SESSION['role'];
 
       timer = setInterval(function(){
         if (role.includes("admin")) {
+        drawShape();
          $.ajax({    //create an ajax request to mainsql.php
            type: "GET",
            url: "mainsql_admin.php",

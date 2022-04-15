@@ -1,14 +1,15 @@
-const canvas = document.querySelector('#canvas');
-const width = canvas.width;// 500
-const height = canvas.height;// 300
+function drawShape() {
+  var canvas = document.getElementById('canvas');
 
-// get the context
-let ctx = canvas.getContext('2d');
+  // Make sure we don't execute when canvas isn't supported
+  if (canvas.getContext) {
 
-// set fill and stroke styles
-ctx.fillStyle = '#F0DB4F';
-ctx.strokeStyle = 'red';
+    // use getContext to use the canvas for drawing
+    var ctx = canvas.getContext('2d');
 
-// draw a rectangle with fill and stroke
-ctx.fillRect(50, 50, 150, 100);
-ctx.strokeRect(50, 50, 150, 100);
+    // Draw shapes
+    ctx.fillRect(25,25,100,100);
+    ctx.clearRect(45,45,60,60);
+    ctx.strokeRect(50,50,50,50);
+  }
+}
