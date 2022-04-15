@@ -16,7 +16,7 @@ $role = $_SESSION['role'];
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <script str="draw_gz.js"></script>
+      <script str="draw_gz.js" type="text/javascript"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
       <script type="text/javascript">
 
