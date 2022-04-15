@@ -18,7 +18,7 @@ $role = $_SESSION['role'];
 <head>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
       <script type="text/javascript">
-
+      <script src="draw_gz.js" type="text/javascript"></script>
 
       $(document).ready(function() {
         if (role.includes("admin")) {
@@ -170,7 +170,6 @@ $role = $_SESSION['role'];
   </div>
   </div>
 <div>
-  <script str="draw_gz.js" type="text/javascript"></script>
 <canvas id="canvas"></canvas>
 </div>
 
