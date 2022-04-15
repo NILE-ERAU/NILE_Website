@@ -23,6 +23,15 @@ $role = $_SESSION['role'];
 
       $(document).ready(function() {
         drawShape();
+        $.ajax({    //create an ajax request to mainsql.php
+          type: "GET",
+          url: "sidebar.php",
+          dataType: "html",   //expect html to be returned
+          success: function(response){
+              $("#sidebarcontainer").html(response);
+              //alert(response);
+          }
+       });
         if (role.includes("admin")) {
          $.ajax({    //create an ajax request to mainsql.php
            type: "GET",
@@ -93,6 +102,16 @@ $role = $_SESSION['role'];
           }
        });
       }
+      $.ajax({    //create an ajax request to mainsql.php
+        type: "GET",
+        url: "sidebar.php",
+        dataType: "html",   //expect html to be returned
+        success: function(response){
+            $("#sidebarcontainer").html(response);
+            //alert(response);
+        }
+     });
+
 
       }, delay);
 
@@ -194,7 +213,7 @@ $role = $_SESSION['role'];
     <canvas id="canvas" width="400" height="400" style="border:1px solid"></canvas>
   </div>
   <div class="rightcanv">
-
+    <div id="sidebarcontainer" align="center"></div>
   </div>
 </section>
 <section>

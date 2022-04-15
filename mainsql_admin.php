@@ -1,8 +1,5 @@
 <?php
 include("config.php");
-$result = mysqli_query($link, "select * FROM robot_status ORDER BY id DESC LIMIT 1");
-echo "<h2>Robot Status</h2>";
-
 
 
 
