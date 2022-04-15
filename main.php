@@ -119,7 +119,9 @@ $role = $_SESSION['role'];
         table.greyGridTable {
           border: 1px solid #FFFFFF;
           background-color: #EEEEEE;
+          table-layout: fixed;
           width: 100%;
+          height: 100%;
           text-align: center;
           border-collapse: collapse;
         }
