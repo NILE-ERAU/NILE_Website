@@ -165,13 +165,14 @@ $role = $_SESSION['role'];
   <div class="rightdiv">
     <p style ="text-align: right;">Logged in as <?php echo $_SESSION["role"]; ?>   <a href="http://nilerobot.info/logout.php" title="Logout">Logout</a></p>
   </div>
+  </div>
 <br/>
 <br/>
 <br/>
-  <div id="command_publish"></div>
+  <div id="command_publish" align="center"></div>
 <br/>
-  <div id="responsecontainer"</div>
-</div>
+  <div id="responsecontainer" align="center"></div>
+
 
 </body>
 </html>
