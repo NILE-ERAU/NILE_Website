@@ -210,7 +210,7 @@ $role = $_SESSION['role'];
 </section>
 <section>
   <div class="leftcanv">
-    <canvas id="canvas" width="400" height="400" style="border:1px solid"></canvas>
+    <canvas id="canvas" width="600" height="600"></canvas>
   </div>
   <div class="rightcanv">
     <div id="sidebarcontainer" align="center"></div>
