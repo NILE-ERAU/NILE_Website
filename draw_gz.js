@@ -1,7 +1,15 @@
-let canvas = document.querySelector('#canvas');
-if(canvas.getContext) {
-   let ctx = main.getContext('2d');
+const canvas = document.querySelector('#main');
+if (!canvas.getContext) {
+    return;
 }
 
-ctx.fillStyle = 'green';
-ctx.fillRect(10, 10, 150, 100);
+// get the context
+let ctx = canvas.getContext('2d');
+
+// set fill and stroke styles
+ctx.fillStyle = '#F0DB4F';
+ctx.strokeStyle = 'red';
+
+// draw a rectangle with fill and stroke
+ctx.fillRect(50, 50, 150, 100);
+ctx.strokeRect(50, 50, 150, 100);
