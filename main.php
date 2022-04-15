@@ -159,6 +159,20 @@ $role = $_SESSION['role'];
         .numinput {
           width: 50px;
         }
+        .leftcanv {
+            width: 60%;
+            height:200px;
+            margin: 0px auto;
+            text-align: center;
+            float: left;
+         }
+         .rightcanv {
+             width: 40%;
+             height:200px;
+             margin: 0px auto;
+             text-align: center;
+             float: right;
+          }
     </style>
 </head>
 <body>
@@ -172,7 +186,12 @@ $role = $_SESSION['role'];
   </div>
   </div>
 <div>
-<canvas id="canvas"></canvas>
+  <div class="leftcanv">
+    <canvas id="canvas"></canvas>
+  </div>
+  <div class="rightcanv">
+
+  </div>
 </div>
 
 <div class="content">
