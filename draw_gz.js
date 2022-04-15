@@ -1,6 +1,7 @@
 function drawShape(coords) {
   var canvas = document.getElementById('canvas');
-  window.alert(coords);
+  const pos = coords.split(",");
+
   // Make sure we don't execute when canvas isn't supported
   if (canvas.getContext) {
 
@@ -13,7 +14,15 @@ function drawShape(coords) {
     var x = (canvas.width / 2) - (img.width / 2) * scale;
     var y = (canvas.height / 2) - (img.height / 2) * scale;
     ctx.drawImage(img, x, y, img.width * scale, img.height * scale);
-    // Draw shapes
 
+
+    var x_ee = Math.cos(pos[0]*Math.PI/180.0)*pos[1]*canvas.width / 2 +canvas.width / 2;
+    var y_ee = Math.sin(pos[0]*Math.PI/180.0)*pos[1]*canvas.height / 2 +canvas.height / 2;
+    // Draw shapes
+    ctx.beginPath();
+    ctx.arc(x_ee, y_ee, 10, 0, 2 * Math.PI, false);
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = '#FF0000';
+    ctx.stroke();
   }
 }
