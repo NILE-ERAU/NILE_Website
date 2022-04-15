@@ -1,6 +1,7 @@
 <?php
 include("config.php");
 $result = mysqli_query($link, "select * FROM robot_status ORDER BY id DESC LIMIT 1");
+$data = mysqli_fetch_row($result);
 echo "<h2>Robot Status</h2>";
 echo "<table class= 'greyGridTable' width=100%>";
 echo "<thead>";
@@ -12,10 +13,10 @@ echo "<td>Z (m)</td>";
 echo "</tr></thead>";
 echo "<tbody>";
 echo "<tr>";
-echo "<td>$result[1]</td>";
-echo "<td>$result[2]</td>";
-echo "<td>$result[3]</td>";
-echo "<td>$result[4]</td>";
+echo "<td>$data[1]</td>";
+echo "<td>$data[2]</td>";
+echo "<td>$data[3]</td>";
+echo "<td>$data[4]</td>";
 echo "</tr></tbody>";
 echo "</table>"
 
