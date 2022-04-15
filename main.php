@@ -168,9 +168,9 @@ $role = $_SESSION['role'];
 <br/>
 <br/>
 <br/>
-  <div id="command_publish" align="center"></div>
+  <div id="command_publish"></div>
 <br/>
-  <div id="responsecontainer" align="center"></div>
+  <div id="responsecontainer"</div>
 </div>
 
 </body>
