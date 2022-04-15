@@ -163,7 +163,7 @@ $role = $_SESSION['role'];
     <img src="/images/NILE_corner.png" alt="NILE Triangle Logo" style="width:400px">
   </div>
   <div class="rightdiv">
-    <p style ="text-align: right;">Logged in as <?php echo $_SESSION["role"]; ?>   <a href="http://nilerobot.info/logout.php" title="Logout">Logout</a></p>
+    <p style ="text-align: right;">Logged in as <?php echo $_SESSION["role"]; ?> </p>  <a href="http://nilerobot.info/logout.php" title="Logout">Logout</a>
   </div>
   </div>
 
