@@ -11,12 +11,13 @@ echo "<td>R (m)</td>";
 echo "<td>Z (m)</td>";
 echo "</tr></thead>";
 echo "<tbody>";
+echo "<tr>";
 echo "<td>$result[1]</td>";
 echo "<td>$result[2]</td>";
 echo "<td>$result[3]</td>";
 echo "<td>$result[4]</td>";
 echo "</tr></tbody>";
-echo "</table></form>";
+echo "</table>;
 
 
 
