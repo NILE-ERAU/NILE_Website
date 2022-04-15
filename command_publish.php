@@ -1,7 +1,7 @@
 <?php
 
 
-echo "<h2>Schedule Command</h2>";
+echo "<h2>Hello?!?! Command</h2>";
 echo "<form action='add_entry.php' method='post' width=100%>";
 echo "<table class= 'greyGridTable' width=100%>";
 echo "<thead>";
