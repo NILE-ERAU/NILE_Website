@@ -4,7 +4,7 @@ function drawShape(coords) {
 
   // Make sure we don't execute when canvas isn't supported
   if (canvas.getContext) {
-
+    canvas.width = canvas.height;
     // use getContext to use the canvas for drawing
     var ctx = canvas.getContext('2d');
     var img = new Image();
