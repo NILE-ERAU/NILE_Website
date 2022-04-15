@@ -1,6 +1,6 @@
-function drawShape(String[] args) {
+function drawShape(coords) {
   var canvas = document.getElementById('canvas');
-  window.alert(args);
+  window.alert(coords);
   // Make sure we don't execute when canvas isn't supported
   if (canvas.getContext) {
 
