@@ -39,7 +39,7 @@ echo "</tbody>";
 echo "</table>";
 
 
-$result = mysqli_query($link, "select * FROM completed_commands ORDER BY timestamp ASC");
+$result = mysqli_query($link, "select * FROM completed_commands ORDER BY timestamp DESC");
 echo "<br/>";
 echo "<h2>Completed Commands</h2>";
 echo "<table class= 'greyGridTable' >";
