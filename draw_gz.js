@@ -1,7 +1,6 @@
-const canvas = document.querySelector('#main');
-if (!canvas.getContext) {
-    return;
-}
+const canvas = document.querySelector('#canvas');
+const width = canvas.width;// 500
+const height = canvas.height;// 300
 
 // get the context
 let ctx = canvas.getContext('2d');
