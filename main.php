@@ -105,12 +105,12 @@ $role = $_SESSION['role'];
         .rightdiv {
          float: right;
          width: 50%;
-         height: 500px;
+         height: 100px;
         }
         .leftdiv {
          float: left;
          width: 50%;
-         height: 500px;
+         height: 100px;
         }
         .no_outline {
           border: 3px solid white;
