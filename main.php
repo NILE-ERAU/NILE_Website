@@ -25,7 +25,7 @@ $role = $_SESSION['role'];
         $.ajax({    //create an ajax request to mainsql.php
           type: "GET",
           url: "getcoords.php",
-          dataType: "html",   //expect html to be returned
+          dataType: "text",   //expect html to be returned
           success: function(response){
               drawShape(response);
           }
@@ -90,7 +90,7 @@ $role = $_SESSION['role'];
         $.ajax({    //create an ajax request to mainsql.php
           type: "GET",
           url: "getcoords.php",
-          dataType: "html",   //expect html to be returned
+          dataType: "text",   //expect html to be returned
           success: function(response){
               drawShape(response);
           }
