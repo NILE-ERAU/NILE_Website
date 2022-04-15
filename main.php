@@ -186,13 +186,13 @@ $role = $_SESSION['role'];
   </div>
 <div>
   <div class="leftcanv">
-    <canvas id="canvas" width="800" height="800" style="border:1px solid"></canvas>
+    <canvas id="canvas" width="400" height="400" style="border:1px solid"></canvas>
   </div>
   <div class="rightcanv">
 
   </div>
 </div>
-
+<div></div>
 <div class="content">
   <div id="command_publish" align="center"></div>
   <div id="responsecontainer" align="center"></div>
