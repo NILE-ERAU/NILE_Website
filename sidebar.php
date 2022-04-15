@@ -1,6 +1,10 @@
 <?php
 include("config.php");
 $result = mysqli_query($link, "select * FROM robot_status ORDER BY id DESC LIMIT 1");
+
+drawShape();
+
+
 $data = mysqli_fetch_row($result);
 echo "<h2>Robot Status</h2>";
 echo "<table class= 'greyGridTable' width=100%>";

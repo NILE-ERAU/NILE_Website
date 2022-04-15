@@ -22,7 +22,6 @@ $role = $_SESSION['role'];
 
 
       $(document).ready(function() {
-        drawShape();
         $.ajax({    //create an ajax request to mainsql.php
           type: "GET",
           url: "sidebar.php",
@@ -79,7 +78,6 @@ $role = $_SESSION['role'];
 
 
       timer = setInterval(function(){
-        drawShape();
         if (role.includes("admin")) {
          $.ajax({    //create an ajax request to mainsql.php
            type: "GET",
