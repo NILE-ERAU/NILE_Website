@@ -131,6 +131,7 @@ $role = $_SESSION['role'];
         }
         table.greyGridTable tbody td {
           font-size: 13px;
+          overflow: hidden;
         }
         table.greyGridTable thead {
           background: #E1FFFF;
@@ -148,9 +149,6 @@ $role = $_SESSION['role'];
         }
         table.greyGridTable tfoot td {
           font-size: 14px;
-        }
-        input {
-          overflow: auto;
         }
     </style>
 </head>
