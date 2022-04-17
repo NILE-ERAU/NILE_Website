@@ -1,4 +1,4 @@
-function drawShape(coords) {
+function updateField(coords) {
   var canvas = document.getElementById('canvas');
   const pos = coords.split(",");
 
@@ -8,7 +8,7 @@ function drawShape(coords) {
     // use getContext to use the canvas for drawing
     var ctx = canvas.getContext('2d');
     var img = new Image();
-    img.src = "images/nile_field.png";
+    img.src = "images/nile_field_2000.png";
     var scale = Math.min(canvas.width / img.width, canvas.height / img.height);
     // get the top left position of the image
     var x = (canvas.width / 2) - (img.width / 2) * scale;

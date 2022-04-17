@@ -27,7 +27,7 @@ $role = $_SESSION['role'];
           url: "getcoords.php",
           dataType: "text",   //expect html to be returned
           success: function(response){
-              drawShape(response);
+              updateField(response);
           }
        });
 
@@ -92,7 +92,7 @@ $role = $_SESSION['role'];
           url: "getcoords.php",
           dataType: "text",   //expect html to be returned
           success: function(response){
-              drawShape(response);
+              updateField(response);
           }
        });
         if (role.includes("admin")) {
