@@ -18,17 +18,17 @@ echo "<td>Add</td></tr></thead>";
 echo "<tbody>";
 echo "<td><input type='datetime-local' id='timestamp' name='timestamp'></td>";
 echo "<td><input list='command' id='command' name='command'</td>";
-echo "<datalist id='command'>"
-echo "<option value='test'>"
-echo "<option value='moveTo'>"
-echo "<option value='homeTrolley'>"
-echo "<option value='homeVert'>"
-echo "<option value='homeRot'>"
-echo "<option value='water'>"
-echo "<option value='hvec'>"
-echo "<option value='takeImage'>"
-echo "<option value='senseSoil'>"
-echo "</datalist>"
+echo "<datalist id='command'>";
+echo "<option value='test'>";
+echo "<option value='moveTo'>";
+echo "<option value='homeTrolley'>";
+echo "<option value='homeVert'>";
+echo "<option value='homeRot'>";
+echo "<option value='water'>";
+echo "<option value='hvec'>";
+echo "<option value='takeImage'>";
+echo "<option value='senseSoil'>";
+echo "</datalist>";
 
 echo "<td><input type='number' id='theta' name='theta' value=0 step='any' size='2'></td>";
 echo "<td><input type='number' id='r' name='r' value=0 step='any' size='2'></td>";
