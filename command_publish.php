@@ -18,7 +18,7 @@ echo "<td>Add</td></tr></thead>";
 echo "<tbody>";
 echo "<td><input type='datetime-local' id='timestamp' name='timestamp'></td>";
 echo "<td><select id='command' name='command'>";
-echo "<option value='test>test</option>";
+echo "<option value='test'>test</option>";
 echo "<option value='moveTo'>moveTo</option>";
 echo "<option value='homeTrolley'>homeTrolley</option>";
 echo "<option value='homeVert'>homeVert</option>";
