@@ -21,7 +21,7 @@ echo "<td><select id='command' name='command'>";
 echo "<option value='test'>test</option>";
 echo "<option value='moveTo'>moveTo</option>";
 echo "<option value='homeTrolley'>homeTrolley</option>";
-echo "<option value='homeVert'>homeVert</option>";
+echo "<option value='homeStepper'>homeVert</option>";
 echo "<option value='homeRot'>homeRot</option>";
 echo "<option value='water'>water</option>";
 echo "<option value='hvec'>hvec</option>";
