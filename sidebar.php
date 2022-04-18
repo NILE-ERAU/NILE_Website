@@ -32,9 +32,9 @@ echo "</tr></thead>";
 echo "<tbody>";
 echo "<tr>";
 echo "<td>$data[1]</td>";
-echo "<td>$data[2]</td>";
-echo "<td>$data[3]</td>";
-echo "<td>$data[4]</td>";
+echo "<td>number_format($data[2], 3, '.', '')</td>";
+echo "<td>number_format($data[3], 3, '.', '')</td>";
+echo "<td>number_format($data[4], 3, '.', '')</td>";
 echo "</tr></tbody>";
 echo "</table>"
 
