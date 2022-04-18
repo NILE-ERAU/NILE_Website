@@ -25,9 +25,6 @@ while($data = mysqli_fetch_row($result))
     echo "<td align=center>$data[4]</td>";
     echo "<td align=center>$data[6]</td>";
     echo "<td align=center>$data[5]</td>";
-    echo "<form action='remove_entry.php' method='post'>";
-    echo "<input type='hidden' name='deleteid' value='" . $data_id . "'>";
-    echo "<input type='submit' value='X'></form></td>";
     echo "</tr>";
 };
 echo "</tbody>";
