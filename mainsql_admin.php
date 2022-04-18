@@ -1,6 +1,37 @@
 <?php
 include("config.php");
 
+$result = mysqli_query($link, "select * FROM soil_samples ORDER BY timestamp DESC");
+echo "<br/>";
+echo "<h2>Soil Samples</h2>";
+echo "<table class= 'greyGridTable' >";
+echo "<thead>";
+echo "<tr>";
+echo "<td>ID</td>";
+echo "<td>Timestamp</td>";
+echo "<td>θ</td>";
+echo "<td>R</td>";
+echo "<td>Z</td>";
+echo "<td>Temp</td>";
+echo "<td>Moisture</td></tr></thead>";
+echo "<tbody>";
+while($data = mysqli_fetch_row($result))
+{
+    echo "<tr>";
+    echo "<td align=center>$data[0]</td>";
+    echo "<td align=center>$data[1]</td>";
+    echo "<td align=center>".strval($data[2]*180/pi())."</td>";
+    echo "<td align=center>$data[3]</td>";
+    echo "<td align=center>$data[4]</td>";
+    echo "<td align=center>$data[6]</td>";
+    echo "<td align=center>$data[5]</td>";
+    echo "<form action='remove_entry.php' method='post'>";
+    echo "<input type='hidden' name='deleteid' value='" . $data_id . "'>";
+    echo "<input type='submit' value='X'></form></td>";
+    echo "</tr>";
+};
+echo "</tbody>";
+echo "</table>";
 
 
 $result = mysqli_query($link, "select * FROM queued_commands ORDER BY timestamp ASC");
