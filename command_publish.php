@@ -27,7 +27,7 @@ echo "<option value='water'>water</option>";
 echo "<option value='hvec'>hvec</option>";
 echo "<option value='takeImage'>takeImage</option>";
 echo "<option value='senseSoil'>senseSoil</option>";
-echo "<option value='kill'>senseSoil</option>";
+echo "<option value='kill'>kill</option>";
 echo "</select></td>";
 
 echo "<td><input type='number' id='theta' name='theta' value=0 step='any' size='2'></td>";
