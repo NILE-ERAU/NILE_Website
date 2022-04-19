@@ -77,8 +77,8 @@ echo "<td>ID</td>";
 echo "<td>Completed At</td>";
 echo "<td>Queued At</td>";
 echo "<td>Command</td>";
-echo "<td>Completed Argument</td>";
 echo "<td>Queued Arg</td>";
+echo "<td>Completed Arg</td>";
 echo "<td>Status</td></tr></thead>";
 echo "<tbody>";
 while($data = mysqli_fetch_row($result))
