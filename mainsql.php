@@ -20,7 +20,7 @@ while($data = mysqli_fetch_row($result))
     echo "<tr>";
     echo "<td align=center>$data[0]</td>";
     echo "<td align=center>$data[1]</td>";
-    echo "<td align=center>".number_format($data[2]*180/pi(), 3, '.', '')."</td>";
+    echo "<td align=center>".number_format($data[2], 3, '.', '')."</td>";
     echo "<td align=center>".number_format($data[3], 3, '.', '')."</td>";
     echo "<td align=center>".number_format($data[4], 3, '.', '')."</td>";
     echo "<td align=center>".number_format($data[6], 3, '.', '')."</td>";
