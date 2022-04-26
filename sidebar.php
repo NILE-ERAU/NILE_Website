@@ -36,7 +36,7 @@ echo "<td>".number_format($data[2], 3, '.', '')."</td>";
 echo "<td>".number_format($data[3], 3, '.', '')."</td>";
 echo "<td>".number_format($data[4], 3, '.', '')."</td>";
 echo "</tr></tbody>";
-echo "</table>"
+echo "</table>";
 
 $result = mysqli_query($link, "select * FROM camera_images ORDER BY id DESC LIMIT 1");
 $data = mysqli_fetch_row($result)
