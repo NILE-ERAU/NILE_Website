@@ -44,7 +44,7 @@ $result = mysqli_query($link, "select (img) FROM camera_images ORDER BY id DESC 
 $data = mysqli_fetch_row($result);
 echo '<img height = "240" width = "320" src="data:image/jpeg;base64,'.$data[0].'"/>';
 echo "<form action='refresh_img.php' method='post'>";
-echo "<input type='submit' value='+'>"
-echo "</form>"
+echo "<input type='submit' value='+'>";
+echo "</form>";
 
 ?>
