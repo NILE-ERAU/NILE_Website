@@ -39,7 +39,7 @@ echo "</tr></tbody>";
 echo "</table>";
 
 $result = mysqli_query($link, "select * FROM camera_images ORDER BY id DESC LIMIT 1");
-$data = mysqli_fetch_row($result);
+$data = mysqli_fetch_assoc($result);
 echo '<img src="data:image/jpeg;base64,'.($data["img"]).'"/>';
 
 ?>
