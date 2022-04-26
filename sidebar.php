@@ -37,9 +37,11 @@ echo "<td>".number_format($data[3], 3, '.', '')."</td>";
 echo "<td>".number_format($data[4], 3, '.', '')."</td>";
 echo "</tr></tbody>";
 echo "</table>";
+echo "<br/>";
 
+echo "<h2>Live NILE Reaction</h2>"
 $result = mysqli_query($link, "select (img) FROM camera_images ORDER BY id DESC LIMIT 1");
 $data = mysqli_fetch_row($result);
-echo '<img src="data:image/jpeg;base64,'.$data[0].'"/>';
+echo '<img height = "240" width = "320" src="data:image/jpeg;base64,'.$data[0].'"/>';
 
 ?>
