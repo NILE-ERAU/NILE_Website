@@ -40,6 +40,6 @@ echo "</table>";
 
 $result = mysqli_query($link, "select * FROM camera_images ORDER BY id DESC LIMIT 1");
 $data = mysqli_fetch_row($result);
-echo "<img src='data:image/jpeg;base64,".base64_encode($data["img"])."'/>'";
+echo '<img src="data:image/jpeg;base64,'.base64_encode($data["img"]).'"/>';
 
 ?>
